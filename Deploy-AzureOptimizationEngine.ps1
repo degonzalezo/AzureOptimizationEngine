@@ -134,7 +134,7 @@ if (Test-Path -Path $lastDeploymentStatePath)
     }
 }
 
-$GitHubOriginalUri = "https://github.com/degonzalezo/AzureOptimizationEngine/blob/master/azuredeploy.json"
+$GitHubOriginalUri = "https://github.com/degonzalezo/AzureOptimizationEngine/master/azuredeploy.json"
 
 if ([string]::IsNullOrEmpty($TemplateUri)) {
     $TemplateUri = $GitHubOriginalUri
