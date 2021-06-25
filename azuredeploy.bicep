@@ -696,6 +696,11 @@ var automationVariables = [
     description: 'The Azure AD object types to export'
     value: '"Application,ServicePrincipal,User,Group"'
   }
+  {
+    name: 'AzureOptimization_RecommendPerfPeriodInDays'
+    description: 'The Period (in days) to look back for performance data from the Log Analytics workspaces'
+    value: 30
+  }
 ]
 
 resource logAnalyticsWorkspaceName_resource 'microsoft.operationalinsights/workspaces@2020-08-01' = if (!logAnalyticsReuse) {
